@@ -300,34 +300,86 @@ align-items: center;
 
 
 /* Estilos para telas pequenas (celulares) */
-@media screen and (max-width: 768px) {
-  #container h1 {
-    font-size: 24px;
-    width: 90%;
+@media screen and (max-width: 767px) {
+  /* Estilos para telas pequenas */
+
+  /* Reduza o tamanho da fonte */
+  body {
+    font-size: 14px;
   }
 
-  .card-img-sobre img {
-    width: 100%;
-  }
-
-  iframe {
-    width: 100%;
-  }
-
-  .container-atendimento {
-    flex-direction: column;
-    gap: 20px;
+  /* Simplifique o cabeçalho */
+  #capa img {
+    max-width: 100%;
     height: auto;
   }
 
-  .container-galeria, .container {
-    margin-left: 0;
+  /* Centralize o texto no cabeçalho */
+  #container h1 {
+    text-align: center;
+  }
+
+  /* Aumente o espaçamento entre os elementos */
+  .card-procedimentos p {
+    margin-bottom: 10px;
+  }
+
+  /* Faça o botão de agendamento ocupar a largura total */
+  .btn {
     width: 100%;
   }
 
-  #slide {
+  /* Simplifique a lista de atendimento */
+  .text-atendimento ul {
+    padding-left: 0;
+  }
+
+  .text-atendimento li {
+    margin-bottom: 5px;
+  }
+
+  /* Reduza o tamanho do mapa incorporado */
+  iframe {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  /* Faça o slider de imagens ocupar a largura total */
+  .container-galeria {
     width: 100%;
-    height: 400px;
+    overflow-x: auto;
+  }
+
+  /* Ajuste o tamanho das imagens do slider */
+  .container-galeria .image-item {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Simplifique o layout da seção "Sobre" */
+  #sobre {
+    padding: 10px;
+  }
+
+  .card-img-sobre img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajuste o espaçamento dentro do card "Sobre" */
+  .card-sobre {
+    padding: 10px;
+  }
+
+  /* Simplifique o layout da seção "Depoimentos" */
+  #depoimentos {
+    padding: 10px;
+  }
+
+  /* Ajuste o tamanho das imagens dos depoimentos */
+  .introducao img {
+    width: 80%;
+    height: auto;
   }
 }
 
